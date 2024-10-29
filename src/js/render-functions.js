@@ -9,13 +9,13 @@ export function renderImages(images) {
 
   const markup = images.map((image) => {
     return `
-      <a href="${image.largeImageURL}" class="gallery__item">
-        <img src="${image.webformatURL}" alt="${image.tags}" title="${image.tags}" class="gallery__image"/>
+      <a href="${image.largeImageURL}" class="gallery-item">
+        <img src="${image.webformatURL}" alt="${image.tags}" title="${image.tags}" class="gallery-image"/>
         <div class="info">
-          <p><b>Likes:</b> ${image.likes}</p>
-          <p><b>Views:</b> ${image.views}</p>
-          <p><b>Comments:</b> ${image.comments}</p>
-          <p><b>Downloads:</b> ${image.downloads}</p>
+          <p class="article-strick" ><b class="main-word" >Likes:</b> ${image.likes}</p>
+          <p class="article-strick" ><b class="main-word" >Views:</b> ${image.views}</p>
+          <p class="article-strick" ><b class="main-word" >Comments:</b> ${image.comments}</p>
+          <p class="article-strick" ><b class="main-word" >Downloads:</b> ${image.downloads}</p>
         </div>
       </a>`;
   }).join('');
