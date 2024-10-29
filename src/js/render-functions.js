@@ -19,6 +19,7 @@ export function renderImages(images) {
         </div>
       </a>`;
   }).join('');
+    
 
   gallery.insertAdjacentHTML('beforeend', markup);
  
